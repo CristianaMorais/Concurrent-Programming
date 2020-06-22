@@ -8,10 +8,10 @@ atómicas ou STM - e modalidades de implementação - capacidade fixa ou ilimita
 Já é fornecido código para um “crawler” sequencial e um servidor HTTP simples de apoio.
 
 ## Implementação
-Java and Cooperari.
+Java e Cooperari.
 
 ## Modo de utilização
-É necessário ter no mínimo java-8.
+É necessário ter no mínimo java-8 instalado.
 
 ### Comandos
 ```bash
