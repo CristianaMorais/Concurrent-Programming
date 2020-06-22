@@ -1,4 +1,4 @@
-# Concurrent-Programming
+# Programação Concorrente (CC3037), 2019/20
 
 ## Objetivos do trabalho
 • Programar, validar a correção, e avaliar o desempenho de filas concorrentes com elementos
@@ -7,13 +7,13 @@ atómicas ou STM - e modalidades de implementação - capacidade fixa ou ilimita
 • Programar um “crawler” concorrente de páginas Web baseado no uso de uma “fork-join pool”.
 Já é fornecido código para um “crawler” sequencial e um servidor HTTP simples de apoio.
 
-## Implementation
+## Implementação
 Java and Cooperari.
 
-## Usage
+## Modo de utilização
 É necessário ter no mínimo java-8.
 
-### Commands
+### Comandos
 ```bash
 
 ```
