@@ -127,7 +127,7 @@ public class WebServer  {
             sent += n;
           }
         } 
-
+        out.flush(); // CHANGED
       }
       finally {
         if (fileToSend != file) {
