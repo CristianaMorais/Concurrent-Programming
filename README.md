@@ -6,7 +6,6 @@ guardados num array, com diversos tipos de aproximações - baseadas em “locks
 atómicas ou STM - e modalidades de implementação - capacidade fixa ou ilimitada.
 
 • Programar um “crawler” concorrente de páginas Web baseado no uso de uma “fork-join pool”.
-Já é fornecido código para um “crawler” sequencial e um servidor HTTP simples de apoio.
 
 ## Implementação
 Java e Cooperari.
