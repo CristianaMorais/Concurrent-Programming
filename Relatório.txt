@@ -1,1 +1,20 @@
-# Programação Concorrente (CC3037), 2019/20
+Relatório do projeto de Programação Concorrente
+
+1. Introdução
+2. Filas concorrentes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.1 Tipo abstracto de dados . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.2 Configuração e execução de testes . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.3 Implementação . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2.3.1 Filas baseada em monitores . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+2.3.2 Filas baseada em STM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+2.3.3 Fila baseada em primitivas atómicas . . . . . . . . . . . . . . . . . . . . . . x
+2.4 Análise de execução linearizável . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+2.5 Avaliação de desempenho . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+2.6 Desafio extra . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+3. Crawler . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+3.1 Código disponibilizado . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+3.1.1 Execução do servidor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+3.1.2 Execução do crawler sequencial . . . . . . . . . . . . . . . . . . . . . . . . . x
+3.2 Implementação . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+3.3 Teste e avaliação de desempenho . . . . . . . . . . . . . . . . . . . . . . . . . . . . x
+4. Conclusão
