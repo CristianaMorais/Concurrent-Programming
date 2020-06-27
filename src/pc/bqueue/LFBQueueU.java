@@ -3,6 +3,7 @@ package pc.bqueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicMarkableReference;
+import java.util.Arrays;
 
 /**
  * Lock-free implementation of queue - unbounded variant.
@@ -43,18 +44,56 @@ public class LFBQueueU<E>  implements BQueue<E> {
   
   @Override
   public int size() {
-    return tail.get() - head.get();
+    rooms.enter(2);
+    int size = tail.get() - head.get();
+    rooms.leave(2);
+    return size;
   }
 
   @Override
   public void add(E elem) {   
-    // TODO
+    rooms.enter(0);
+    while(true) {
+      if (addElementFlag.compareAndSet(false, true)) {
+        int p = tail.getAndIncrement();
+        if (p >= array.length) {
+          int newCapacity = array.length*2;
+          E[] newArray = Arrays.copyOf(array,newCapacity);
+          array = newArray;
+          for (int i = 0; i < newArray.length; i++) {
+            array[i % array.length] = newArray[i];
+          }
+        }
+        array[p % array.length] = elem;
+        addElementFlag.set(false);
+        break;
+      }
+    }
+
+    rooms.leave(0);
   }
   
   @Override
   public E remove() {   
-    // TODO: should be the same as LFQueue
-    return null;
+   E elem;
+   while (true) {
+    rooms.enter(1);
+    int p = head.getAndIncrement();
+    if (p < tail.get()) {
+      int pos = p % array.length;
+      elem = array[pos];
+      array[pos] = null;
+      break;
+    } 
+    else {    
+      // "undo"
+      head.getAndDecrement();
+      rooms.leave(1);
+    }
+  }
+  rooms.leave(1);
+  return elem;
+
   }
 
   /**

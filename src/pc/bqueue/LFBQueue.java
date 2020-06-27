@@ -40,39 +40,54 @@ public class LFBQueue<E> implements BQueue<E> {
 
   @Override
   public int size() {
-    return tail.get() - head.get();
+    rooms.enter(2);
+    int size = tail.get() - head.get();
+    rooms.leave(2);
+    return size;
   }
 
 
   @Override
   public void add(E elem) {   
     while(true) {
+      rooms.enter(0);
       int p = tail.getAndIncrement();
       if (p - head.get() < array.length) {
         array[p % array.length] = elem;
         break;
-      } else {
+      } 
+
+      else {
         // "undo"
         tail.getAndDecrement();
+        rooms.leave(0);
       }
     }
+
+    rooms.leave(0);
   }
 
   @Override
   public E remove() {   
     E elem = null;
     while(true) {
+      rooms.enter(1);
       int p = head.getAndIncrement();
       if (p < tail.get()) {
         int pos = p % array.length;
         elem = array[pos];
         array[pos] = null;
         break;
-      } else {
+      } 
+
+      else {
         // "undo"
         head.getAndDecrement();
+        rooms.leave(1);
       }
     }
+
+    rooms.leave(1);
     return elem;
   }
 
