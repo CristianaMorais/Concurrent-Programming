@@ -49,8 +49,8 @@ public class MBQueue<E> implements BQueue<E> {
         } 
       }
       array[(head + size) % array.length] = elem;
-      notifyAll(); 
-      size++; 
+      size++;
+      notifyAll();
     }
   }
 
@@ -71,11 +71,10 @@ public class MBQueue<E> implements BQueue<E> {
       elem = array[head];
       array[head] = null;
       head = (head + 1) % array.length;
-
+      size--; 
       notifyAll();
-      size--;       
     }
-    
+
     return elem;
   }
 
