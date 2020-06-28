@@ -16,13 +16,13 @@ Nota: pode ainda ser necessário criar um repositório chamado "classes"
 
 ### Comandos
 =============================================
-= Material do projecto                      =
-= Programação Concorrente (CC3037), 2019/20 =
-= Eduardo R.B. Marques, DCC/FCUP            =
+| Material do projecto                      |
+| Programação Concorrente (CC3037), 2019/20 |
+| Eduardo R.B. Marques, DCC/FCUP            |
 =============================================
 
 ===============
-= Directórios =
+| Directórios |
 ===============
 
 src => código
