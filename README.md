@@ -19,11 +19,10 @@ Nota: pode ainda ser necessário criar um repositório chamado "classes"
 | Material do projecto                      |
 | Programação Concorrente (CC3037), 2019/20 |
 | Eduardo R.B. Marques, DCC/FCUP            |
----------------------------------------------
+
 
 ---------------
 | Directórios |
----------------
 
 src => código
 
@@ -52,7 +51,7 @@ Outras pastas
 
 -----------
 | Scripts |
------------
+
 
 Genéricos
 
