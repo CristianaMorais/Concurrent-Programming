@@ -15,15 +15,15 @@ Java e Cooperari.
 Nota: pode ainda ser necessário criar um repositório chamado "classes"
 
 ### Comandos
-=============================================
+---------------------------------------------
 | Material do projecto                      |
 | Programação Concorrente (CC3037), 2019/20 |
 | Eduardo R.B. Marques, DCC/FCUP            |
-=============================================
+---------------------------------------------
 
-===============
+---------------
 | Directórios |
-===============
+---------------
 
 src => código
 
@@ -50,9 +50,9 @@ Outras pastas
  _ajdump, cdata, cooperari-test-data 
     => directórios usados pelo Cooperari
 
-===========
-= Scripts =
-===========
+-----------
+| Scripts |
+-----------
 
 Genéricos
 
