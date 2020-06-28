@@ -11,7 +11,7 @@ atómicas ou STM - e modalidades de implementação - capacidade fixa ou ilimita
 Java e Cooperari.
 
 ## Modo de utilização
-É necessário ter o OpenJDK para java 8 instalado.
+É necessário ter o OpenJDK para java 8 instalado e o cooperari. Este último pode ser baixado neste link: https://github.com/Cooperari/cooperari
 
 ### Comandos
 ##### Material do projecto                      
