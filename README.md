@@ -14,13 +14,13 @@ Java e Cooperari.
 É necessário ter o OpenJDK para java 8 instalado.
 
 ### Comandos
----------------------------------------------
+|-------------------------------------------|
 | Material do projecto                      |
 | Programação Concorrente (CC3037), 2019/20 |
 | Eduardo R.B. Marques, DCC/FCUP            |
 
 
----------------
+|-------------|
 | Directórios |
 
 ```bash
@@ -49,7 +49,7 @@ Outras pastas
  _ajdump, cdata, cooperari-test-data 
     => directórios usados pelo Cooperari
 ```
------------
+|---------|
 | Scripts |
 
 ```bash
