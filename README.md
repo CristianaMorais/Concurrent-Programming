@@ -12,7 +12,6 @@ Java e Cooperari.
 
 ## Modo de utilização
 É necessário ter o OpenJDK para java 8 instalado.
-Nota: pode ainda ser necessário criar um repositório chamado "classes"
 
 ### Comandos
 ---------------------------------------------
@@ -24,6 +23,7 @@ Nota: pode ainda ser necessário criar um repositório chamado "classes"
 ---------------
 | Directórios |
 
+```bash
 src => código
 
   src/pc/bqueue  
@@ -48,11 +48,11 @@ Outras pastas
 
  _ajdump, cdata, cooperari-test-data 
     => directórios usados pelo Cooperari
-
+```
 -----------
 | Scripts |
 
-
+```bash
 Genéricos
 
   compile.sh 
@@ -93,6 +93,7 @@ Trabalho com crawler
 Scripts auxiliares (não precisa de corrê-los directamente)
 
   cjunitp.sh, cjunit.sh, cjavac.sh, env.sh 
+```
 
 ## Autoras
 | Nome                            | Nº Mecanográfico   |
